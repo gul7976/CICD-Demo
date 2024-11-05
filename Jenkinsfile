@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Check out code from the repository
-                git branch: 'main', url: 'https://github.com/your-repo/your-project.git'
+                git branch: 'main', url: 'https://github.com/gul7976/CICD-Demo'
             }
         }
 
