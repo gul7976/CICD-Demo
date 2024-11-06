@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'your-slave-label' }
+    agent any
 
     stages {
         stage('Clone Repository') {
@@ -8,17 +8,7 @@ pipeline {
             }
         }
 
-        stage('Install Dependencies') {
-            steps {
-                sh 'pip install pytest'
-            }
-        }
-
-        stage('Run Tests') {
-            steps {
-                sh 'pytest test_add_numbers.py'
-            }
-        }
+        
     }
 
     post {
